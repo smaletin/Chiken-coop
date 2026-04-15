@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Курятник</title>
+  <meta name="viewport" content="width=device-width, initialscale=1">
+  <link rel="icon" href="data:,">
+  <!--<link rel="stylesheet" type="text/css" href="skeleton.css">-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Курятник</h1>
+  <p>GPIO state: <strong> %STATE%</strong></p>
+
+  <div class="toggle-switch" tabindex="0">
+  <input type="checkbox" name="toggleLight" value="yes" id="toggleLight-id"/>
+  <label for="toggleLight-id">
+    <div class="area" aria-hidden="true">
+      <div class="background">
+        <div class="handle"></div>
+      </div>
+    </div>
+    Включить свет внутри
+  </label>
+  </div>
+  <br>
+  <div class="toggle-switch" tabindex="1">
+  <input type="checkbox" name="toggleLightStreet" value="yes" id="toggleLightStreet-id" />
+  <label for="toggleLightStreet-id">
+    <div class="area" aria-hidden="true">
+      <div class="background">
+        <div class="handle"></div>
+      </div>
+    </div>
+    Включить свет на улице
+  </label>
+  </div>
+  <br>
+  </div>
+  <div class="toggle-switch" tabindex="2">
+  <input type="checkbox" name="toggleVentilation" value="yes" id="toggleVentilation-id" />
+  <label for="toggleVentilation-id">
+    <div class="area" aria-hidden="true">
+      <div class="background">
+        <div class="handle"></div>
+      </div>
+    </div>
+    Включить вентиляцию
+  </label>
+  </div>
+  <br>
+  <div class="toggle-switch" tabindex="2">
+  <input type="checkbox" name="toggleHeading" value="yes" id="toggleHeading-id" />
+  <label for="toggleHeading-id">
+    <div class="area" aria-hidden="true">
+      <div class="background">
+        <div class="handle"></div>
+      </div>
+    </div>
+    Включить отопление
+  </label>
+  <img src="Radiator.png" alt="Изображение радиатора" width="32" height="32">
+  </div>
+  <p><a href="/on"><button class="button">ON</button></a></p>
+  <p><a href="/off"><button class="button button2">OFF</button></a></p>
+</body>
+</html>
